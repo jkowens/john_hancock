@@ -24,3 +24,9 @@ document.addEventListener('DOMContentLoaded', function(){
     resizeCanvas();
   }
 }, false)
+
+const clearSignature = function() {
+  const canvas = document.getElementById("JohnHancock-canvas");
+  const signaturePad = new SignaturePad(canvas);
+  signaturePad.clear();
+}
